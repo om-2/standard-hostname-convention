@@ -44,20 +44,20 @@ For example, a redundant distribution switch on a campus could be named the foll
 #### Example References:
 
 #### Physical Chassis Types
-Denotation  |   Explanation
-          --|--
-rt          |   Router
-sw          |   Switch
-fw          |   Firewall Appliance
-ap          |   Access Point
+| Denotation  |   Explanation |
+| --------- | ------------- |
+|rt          |   Router |
+|sw          |   Switch |
+|fw          |   Firewall Appliance |
+|ap          |   Access Point |
 
 #### Layer Types
-Denotation  |   Explanation
-          --|-- 
-ax          |   Access
-ds          |   Distribution
-co          |   Core
-eg          |   Edge
+|Denotation  |   Explanation |
+| ---------- | ------------- |
+|ax         |   Access |
+|ds          |   Distribution |
+|co          |   Core |
+|eg          |   Edge |
 
 
 ### Interfaces Descriptions
@@ -75,12 +75,12 @@ This is especially usefull for long P2P links, such as GRE, VPN or building inte
 #### Example References:
 
 ##### Port Types
-Denotation  |  Explanation
-          --|--
-ge          |  Gigabit Ethernet
-fe          |  Fast Ethernet
-gre         |  Generic Routing Encap.
-vl          |  Virtual LAN
+|Denotation  |  Explanation |
+| ---------- | ------------ |
+|ge          |  Gigabit Ethernet |
+|fe          |  Fast Ethernet |
+|gre         |  Generic Routing Encap. |
+|vl          |  Virtual LAN |
 
 
 
@@ -95,10 +95,10 @@ vl          |  Virtual LAN
 #### Example References:
 
 ##### Physical Chassis
-Denotation  |   Explanation
-          --|--
-cl          |  A client endpoint device, such as a workstation.
-sv          |  Server
-ct          |  Container
-vm          |  Hypervisor Guest
+|Denotation  |   Explanation |
+| ---------- | ------------- |
+|cl          |  A client endpoint device, such as a workstation.|
+|sv          |  Server |
+|ct          |  Container |
+|vm          |  Hypervisor Guest |
 
