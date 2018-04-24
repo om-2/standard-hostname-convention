@@ -86,19 +86,39 @@ This is especially usefull for long P2P links, such as GRE, VPN or building inte
 
 ## Servers and Endpoints
 
+[type]-[layer]-[service/servicegroup]-[serial]  
 
+For example, a server that was a host for development docker containers could be named the following
 
+* sv-dev-docker-01
 
-
-
+The service may be explicit or donoted by a generic group if it is part of a larger groups of services, such as a failover cluster.  
 
 #### Example References:
 
-##### Physical Chassis
+##### Type
 |Denotation  |   Explanation |
 | ---------- | ------------- |
 |cl          |  A client endpoint device, such as a workstation.|
 |sv          |  Server |
 |ct          |  Container |
-|vm          |  Hypervisor Guest |
+|iot          |  IOT Endpoint |
+
+##### Logical Layer
+|Denotation  |   Explanation |
+| ---------- | ------------- |
+|prod          |  Production |
+|dev          |  Development |
+|co           |  Core |
+|dmz          |  DMZ Host |
+
+##### Service(group)
+|Denotation  |   Explanation |
+| ---------- | ------------- |
+| web          |  Generic Webserver |
+| Apache          |  Apache Server |
+| dns        |  Generic DNS |
+| bind          | Bind DNS Server |
+
+
 
