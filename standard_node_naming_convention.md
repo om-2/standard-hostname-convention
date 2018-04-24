@@ -88,11 +88,13 @@ This is especially usefull for long P2P links, such as GRE, VPN or building inte
 
 [type]-[layer]-[service/servicegroup]-[serial]  
 
-For example, a server that was a host for development docker containers could be named the following
+For example, a server that was a host for development docker containers could be named the following:
 
 * sv-dev-docker-01
 
-The service may be explicit or donoted by a generic group if it is part of a larger groups of services, such as a failover cluster.  
+The service may be explicit or denoted by a generic group if it is part of a larger groups of services, such as a failover cluster.  
+
+As mentioned in section one, CNAMES should be used if needed to specify explicit services. 
 
 #### Example References:
 
