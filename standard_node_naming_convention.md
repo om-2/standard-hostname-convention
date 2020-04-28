@@ -1,45 +1,30 @@
 # Standard Node Naming Convention
 
-#### It should be :
+## Goals
 
-* **Logical**
-  - It is important to remember that host names should not reflect a specific device, but rather, 
-    be a logical identifier of a device in the overarching infrastructure. 
-    This allows for schemes to be teleported across environments.
+**Logical**: It is important to remember that host names should not reflect a specific device, but rather,  be a logical identifier of a device in the overarching infrastructure. This allows for schemes to be teleported across environments.
 
-* **Scalable**
-  - The scheme must be able to scale, accommodating not just growth, but also shrinkage.
+**Scalable**: The scheme must be able to scale, accommodating not just growth, but also shrinkage.
 
-* **Human Readable**
-  - The scheme must be readable and descriptive enough for a Human to consult a site-book 
-    for further documentation about the object(s).
+**Human Readable**: The scheme must be readable and descriptive enough for a Human to consult a site-book for further documentation about the object(s).
 
-* **Machine Readable**
-  - The scheme must remain easily parse-able and dynamically generate-able 
-    by a machine for automation purposes.
+**Machine Readable**: The scheme must remain easily parse-able and dynamically generate-able by a machine for automation purposes.
 
-* **Authoritative**
-  - Identifiers such as locations, or VLAN tags must always match with 
-    an authoritative source, such as a site-book.
+**Authoritative**: Identifiers such as locations, or VLAN tags must always match with an authoritative source, such as a site-book.
 
 #### Furthermore :
-* The DNS hierarchy should always properly reflect the naming scheme. 
-  In the event that a specific service on a host should need to be referenced, 
-  a CNAME record shall be used.
-
-
+* The DNS hierarchy should always properly reflect the naming scheme. In the event that a specific service on a host should need to be referenced, a CNAME record shall be used.
 
 
 ## Network Devices and Interfaces
 
 ### Physical Chassis
 
-* [type]-[layer]-[serial]
+* `[type]-[layer]-[serial]`
 
 For example, a redundant distribution switch on a campus could be named the following.
 
-* sw-ds-02.bldg4.campus02.example.com
-
+* `sw-ds-02.bldg4.campus02.example.com`
 
 #### Example References:
 
@@ -61,15 +46,14 @@ For example, a redundant distribution switch on a campus could be named the foll
 
 
 ### Interfaces Descriptions
- 
-* [type]-[serial]--[destint]-[desthost] 
 
-For example, a trunk interface for vlan 20 from an edge router (rt-eg-01.campus.example.com) 
-to a core switch could look like the following.
+* `[type]-[serial]--[destint]-[desthost]`
 
-* vl20--ge01.sw-co-01.campus.example.com
+For example, a trunk interface for VLAN 20 from an edge router (rt-eg-01.campus.example.com) to a core switch could look like the following.
 
-This is especially usefull for long P2P links, such as GRE, VPN or building interconnects. 
+* `vl20--ge01.sw-co-01.campus.example.com`
+
+This is especially useful for long P2P links, such as GRE, VPN or building interconnects.
 
 
 #### Example References:
@@ -86,11 +70,11 @@ This is especially usefull for long P2P links, such as GRE, VPN or building inte
 
 ## Servers and Endpoints
 
-[type]-[layer]-[service/servicegroup]-[serial]  
+`[type]-[layer]-[service/servicegroup]-[serial]`
 
 For example, a server that was a host for development docker containers could be named the following:
 
-* sv-dev-docker-01
+* `sv-dev-docker-01`
 
 The service may be explicit or denoted by a generic group if it is part of a larger groups of services, such as a failover cluster.  
 
@@ -120,6 +104,3 @@ The service may be explicit or denoted by a generic group if it is part of a lar
 | Apache          |  Apache Server |
 | dns        |  Generic DNS |
 | bind          | Bind DNS Server |
-
-
-
